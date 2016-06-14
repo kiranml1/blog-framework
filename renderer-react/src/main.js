@@ -22,10 +22,15 @@ import ReactDOM from 'react-dom';
 import Wrapper from './components/layout';
 import Blog from './components/blog-component';
 import BlogRegistration from './components/blog-registration';
+import Wireframe from './components/wireframe';
 
 ReactDOM.render(
   <Wrapper>
     <Blog title="Blog Title" author="Author" />
     <BlogRegistration />
   </Wrapper>,
+  document.getElementById('app'));
+
+ReactDOM.render(
+  <Wireframe />,
   document.getElementById('app'));

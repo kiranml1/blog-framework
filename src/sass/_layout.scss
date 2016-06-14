@@ -1,7 +1,11 @@
-$layout-bg: #f0f8ff;
+$layout-bg: #ccc;
 
-.main-wrapper, %main-wrapper {
+* {
   box-sizing: border-box;
+}
+
+.main-wrapper,
+%main-wrapper {
   margin: 0;
   padding: 0;
 }
@@ -11,7 +15,76 @@ body {
 }
 
 .layout-wrapper {
-  background-color: $layout-bg;
   margin: 0 auto;
   max-width: 1200px;
+  background-color: $layout-bg;
+
+  .header, .footer {
+    display: block;
+  }
+
+  .header {
+    height: 100px;
+    .main-logo {
+      display: inline-block;
+      float: left;
+      margin: 0 auto;
+      width: 75%;
+      height: 100px;
+      background-color: #ccc;
+
+      h2 {
+        padding: 0;
+        text-align: center;
+      }
+    }
+    .button-section {
+      float: left;
+      width: 10%;
+    }
+  }
+
+  .wrapper-content {
+    .main-banner {
+      height: 300px;
+      .video-container {
+        float: left;
+        width: 60%;
+      }
+      .news-feed {
+        float: left;
+        width: 30%;
+      }
+    }
+    .main-description {
+      height: 300px;
+      .main-image {
+        float: left;
+        width: 30%;
+      }
+      .description {
+        float: left;
+        width: 50%;
+      }
+    }
+    .brand-links {
+      width: 100%;
+      height: 200px;
+      .brand {
+        .profile float: left
+        width: 30%;
+        {
+          height: 150px;
+        };
+      }
+    }
+  }
+
+  .footer {
+    height: 200px;
+    .footer-cols {
+      float: left;
+      width: 30%;
+    }
+  }
 }
