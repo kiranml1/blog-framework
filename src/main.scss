@@ -1,3 +1,14 @@
-@import 'sass/normalize';
-@import 'sass/layout';
-@import 'sass/typography';
+// vendor
+@import 'sass/vendor/normalize';
+
+// mixins
+@import 'sass/mixins/boxsizing';
+@import 'sass/mixins/breakpoints';
+
+// partials
+@import 'sass/partials/base';
+
+//modules
+@import 'sass/modules/base';
+@import 'sass/modules/layout';
+@import 'sass/modules/typography';

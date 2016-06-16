@@ -22,7 +22,7 @@ module.exports = {
     publicPath: '/build',
     filename: 'bundle.js'
   },
-  // modules for webpack bundling
+  // mixins for webpack bundling
   module: {
     // pre-loaders for webpack
     preLoaders: [
